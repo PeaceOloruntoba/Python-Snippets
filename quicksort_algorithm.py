@@ -7,8 +7,12 @@ def quicksort(arr):
         greater_than_pivot = [x for x in arr[1:] if x > pivot]
         return quicksort(less_than_pivot) + [pivot] + quicksort(greater_than_pivot)
 
-# Example Usage
-unsorted_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
-sorted_list = quicksort(unsorted_list)
-print(f"Unsorted List: {unsorted_list}")
-print(f"Sorted List: {sorted_list}")
+# User Input
+user_input = input("Enter a list of numbers separated by spaces: ")
+try:
+    user_array = [int(x) for x in user_input.split()]
+    sorted_array = quicksort(user_array)
+    print(f"Original Array: {user_array}")
+    print(f"Sorted Array: {sorted_array}")
+except ValueError:
+    print("Invalid input. Please enter a list of numbers.")
