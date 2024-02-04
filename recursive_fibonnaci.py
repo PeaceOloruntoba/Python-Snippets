@@ -12,5 +12,5 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 # Example Usage
-result = fibonacci(6)
+result = fibonacci(n)
 print(f"The {n}th Fibonacci number is: {result}")
