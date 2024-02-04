@@ -17,3 +17,4 @@ try:
 except ValueError:
     print("Invalid input. Please enter a list of numbers.")
 # 2024 Peace Oloruntoba.
+    
